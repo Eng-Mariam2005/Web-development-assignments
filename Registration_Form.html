@@ -1,0 +1,100 @@
+<!-- Assignmemnt 2: Registration Form
+ Mariam A.I Athawabtah
+ 2320231105
+ Applcations: text inputs, email, password, date, select dropdown, radio buttons, checkboxes, range slider,
+  file upload, textarea, and proper validation.
+  -->
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" content="Fill in this form">
+    <title>Registration Form</title>
+</head>
+
+<body>
+
+    <head>
+        <img src="اااا.jpg" alt="University logo" width="110"> <br>
+        <h1>Registration Form</h1>
+        <hr>
+    </head>
+    <!-- no action =) I don't have a server to send info to, so it will be sent on the same page -->
+    <form method="get">
+        <fieldset>
+            <legend> Personal Information</legend>
+            <label for="Full name"> Full name</label><br>
+            <input type="text" name="Fullname" id="fullname" required placeholder="Full name"><br><br>
+
+            <label for="email"> Email</label><br>
+            <input type="email" name="email" id="email" required placeholder="123@aaa.com"><br><br>
+
+            <label for="dateobirth">Date of Birth</label><br>
+            <input type="date" name="dof" id="dateobirth" required><br><br>
+
+            <label>Gender</label><br>
+            <input type="radio" name="gender" id="F" value="Female">
+            <label for="F"> Female</label>
+
+            <input type="radio" name="gender" id="M" value="Male">
+            <label for="M"> Male</label><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Academic Information</legend>
+
+            <label for="ID">University ID</label><br>
+            <input type="number" name="id" id="ID" required placeholder="0123456789" maxlength="10"
+                minlength="10"><br><br>
+
+            <label for="pass">Password</label><br>
+            <input type="password" name="pass" id="pass" placeholder="Password" required minlength="9"
+                maxlength="9"><br><br>
+
+            <label for="major">Major</label><br>
+            <input list="Majors" name="major">
+            <datalist id="Majors">
+                <option value="Computer Engineering">Computer Engineering</option>
+                <option value="Computer Science">Computer Science</option>
+                <option value="Computer Architecture">Computer Architecture</option>
+                <option value="Information Technology">Information Technology</option>
+                <option value="CyberSecurity">CyberSecurity</option>
+                <option value="Management Info System">Management Info System</option>
+            </datalist><br><br>
+
+            <label for="fileupload">File Upload</label><br>
+            <input type="file" name="file" id="fileupload" required><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Additional Information</legend>
+            <label for="skills">Skills</label><br>
+            <input type="checkbox" id="1" value="Programming" name="1">
+            <label for="1">Programming</label><br><br>
+
+            <input type="checkbox" id="2" value="Data Analyzing" name="2">
+            <label for="2">Data Analyzing</label><br><br>
+
+            <input type="checkbox" id="3" value="Database Systems" name="3">
+            <label for="3">Database Systems</label><br><br>
+
+            <input type="checkbox" id="4" value="Web Developing" name="4">
+            <label for="4">Web Developing</label><br><br>
+
+            <input type="checkbox" id="5" value="Cybersecurity" name="5">
+            <label for="5">Cybersecurity</label><br><br>
+
+            <input type="checkbox" id="6" value="Logic design" name="6">
+            <label for="6">Logic design</label><br><br>
+
+            <label for="talk">Introduce yourself</label><br>
+            <textarea name="Introduction" id="talk" placeholder="Introduce yourself"></textarea>
+        </fieldset>
+        <button type="submit">Register</button>
+        <button type="reset">Clear Form</button>
+
+    </form>
+</body>
+
+</html>
