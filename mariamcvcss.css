@@ -1,0 +1,135 @@
+/* Reset some defaults */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #1e1e2f, #2c3e50);
+    color: #f5f6fa;
+    line-height: 1.6;
+    padding: 30px;
+}
+
+/* Center container feel */
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    backdrop-filter: blur(8px);
+    z-index: -1;
+}
+
+/* Image */
+img {
+    display: block;
+    margin: 0 auto 15px;
+    border-radius: 50%;
+    border: 3px solid #00cec9;
+    box-shadow: 0 0 15px #00cec9;
+}
+
+/* Main Title */
+.h1 {
+    text-align: center;
+    font-size: 3rem;
+    color: #00cec9;
+    margin-bottom: 20px;
+    text-shadow: 0 0 10px rgba(0, 206, 201, 0.7);
+}
+
+/* Section Titles */
+h2 {
+    color: #74b9ff;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    border-left: 5px solid #00cec9;
+    padding-left: 10px;
+}
+
+/* Lists */
+ul,
+ol {
+    margin-left: 25px;
+    margin-bottom: 15px;
+}
+
+/* List items */
+li {
+    margin-bottom: 8px;
+    transition: 0.3s;
+}
+
+li:hover {
+    transform: translateX(5px);
+    color: #00cec9;
+}
+
+/* Paragraph */
+p {
+    margin-bottom: 15px;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 12px;
+    border-radius: 10px;
+}
+
+/* Links */
+a {
+    color: #00cec9;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #81ecec;
+}
+
+/* Horizontal line */
+hr {
+    border: none;
+    height: 1px;
+    background: linear-gradient(to right, transparent, #00cec9, transparent);
+    margin: 25px 0;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Table Header */
+th {
+    background: #00cec9;
+    color: #1e1e2f;
+    padding: 10px;
+}
+
+/* Table Data */
+td {
+    padding: 10px;
+    text-align: center;
+}
+
+/* Alternate row effect */
+tbody tr:nth-child(even) {
+    background: rgba(255, 255, 255, 0.08);
+}
+
+/* Hover effect */
+tbody tr:hover {
+    background: rgba(0, 206, 201, 0.2);
+}
+
+/* Bold labels */
+b {
+    color: #ffeaa7;
+}
