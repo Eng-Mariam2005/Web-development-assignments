@@ -1,0 +1,101 @@
+body {
+    font-family: Arial;
+    margin: 0;
+    padding: 20px;
+    background-color: #eef2f7;
+}
+
+/* ===== HEADER ===== */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header img {
+    margin-bottom: 10px;
+}
+
+h1 {
+    color: #2c3e50;
+}
+
+hr {
+    width: 60%;
+    border: 1px solid #ccc;
+}
+
+/* ===== FORM LAYOUT (GRID) ===== */
+form {
+    width: 75%;
+    margin: auto;
+    background-color: white;
+    padding: 25px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+/* ===== FIELDSETS ===== */
+fieldset {
+    padding: 15px;
+    background-color: #f9fafc;
+    border: 1px solid #ddd;
+}
+
+legend {
+    font-weight: bold;
+    color: #34495e;
+}
+
+/* ===== INPUTS ===== */
+input {
+    width: 95%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+}
+
+textarea {
+    width: 95%;
+    height: 100px;
+    padding: 8px;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+}
+
+/* ===== RADIO + CHECKBOX ===== */
+input[type="radio"],
+input[type="checkbox"] {
+    width: auto;
+    margin-right: 5px;
+}
+
+/* ===== BUTTON AREA (FLEXBOX) ===== */
+div {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* BUTTONS */
+button {
+    padding: 10px 20px;
+    border: none;
+    color: white;
+    border-radius: 5px;
+}
+
+/* primary button */
+button {
+    background-color: #3498db;
+}
+
+/* second button (reset) */
+button+button {
+    background-color: #e74c3c;
+}
